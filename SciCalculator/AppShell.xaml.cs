@@ -1,4 +1,4 @@
-﻿namespace TARge21SciCalculator;
+﻿namespace SciCalculator;
 
 public partial class AppShell : Shell
 {

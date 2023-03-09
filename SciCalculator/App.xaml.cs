@@ -4,7 +4,7 @@ using Microsoft.UI.Windowing;
 using Windows.Graphics;
 #endif
 
-namespace TARge21SciCalculator;
+namespace SciCalculator;
 
 public partial class App : Application
 {

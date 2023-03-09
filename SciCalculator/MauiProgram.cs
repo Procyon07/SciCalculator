@@ -1,4 +1,4 @@
-﻿namespace TARge21SciCalculator;
+﻿namespace SciCalculator;
 
 public static class MauiProgram
 {

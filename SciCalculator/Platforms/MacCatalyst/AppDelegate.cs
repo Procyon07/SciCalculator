@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace SciCalculator;
+namespace TARge21SciCalculator;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

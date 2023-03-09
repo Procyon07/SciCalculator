@@ -1,4 +1,4 @@
-﻿namespace SciCalculator;
+﻿namespace TARge21SciCalculator;
 
 public partial class MainPage : ContentPage
 {

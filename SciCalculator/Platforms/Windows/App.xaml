@@ -1,8 +1,8 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="TARge21SciCalculator.WinUI.App"
+    x:Class="SciCalculator.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:TARge21SciCalculator.WinUI">
+    xmlns:local="using:SciCalculator.WinUI">
 
 </maui:MauiWinUIApplication>

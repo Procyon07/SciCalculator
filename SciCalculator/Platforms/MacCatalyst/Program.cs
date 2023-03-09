@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace TARge21SciCalculator;
+namespace SciCalculator;
 
 public class Program
 {

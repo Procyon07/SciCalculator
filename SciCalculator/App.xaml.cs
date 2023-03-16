@@ -8,12 +8,12 @@ namespace SciCalculator;
 
 public partial class App : Application
 {
-	const int WindowWidth = 540; 
-	const int WindowHeight = 1000;
+    const int WindowWidth = 540;
+    const int WindowHeight = 1000;
 
-	public App()
-	{
-		InitializeComponent();
+    public App()
+    {
+        InitializeComponent();
 
 #if WINDOWS
 	Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
@@ -28,6 +28,6 @@ public partial class App : Application
     });
 #endif
 
-        MainPage = new AppShell();
-	}
+        MainPage = new CalculatorPage();
+    }
 }

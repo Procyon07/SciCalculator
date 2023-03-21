@@ -4,7 +4,7 @@
              x:Class="SciCalculator.Views.CalculatorPage"
              Title="CalculatorPage">
     <Grid
-        RowDefinitions="*,68,48,44,48,64,64,64,64,64"
+        RowDefinitions="*,68,48,44,44,48,64,64,64,64"
         ColumnDefinitions="*,*,*,*,*">
 
         <BoxView

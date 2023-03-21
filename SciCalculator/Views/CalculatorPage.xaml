@@ -242,7 +242,6 @@
             Grid.Row="6"
             Grid.Column="0"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="7" />
@@ -250,7 +249,6 @@
             Grid.Row="6"
             Grid.Column="1"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="8" />
@@ -258,7 +256,6 @@
             Grid.Row="6"
             Grid.Column="2"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="9" />
@@ -267,7 +264,6 @@
             Grid.Column="3"
             Grid.ColumnSpan="2"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource OperatorButtonStyle}"
             Command="{Binding ResetCommand}"
             Text="AC"/>
@@ -278,7 +274,6 @@
             Grid.Row="7"
             Grid.Column="0"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="4" />
@@ -286,7 +281,6 @@
             Grid.Row="7"
             Grid.Column="1"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="5" />
@@ -294,7 +288,6 @@
             Grid.Row="7"
             Grid.Column="2"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="6" />
@@ -302,7 +295,6 @@
             Grid.Row="7"
             Grid.Column="3"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource OperatorButtonStyle}"
             Command="{Binding MathOperatorCommand}"
             Text="×" />
@@ -310,7 +302,6 @@
             Grid.Row="7"
             Grid.Column="4"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource OperatorButtonStyle}"
             Command="{Binding MathOperatorCommand}"
             Text="÷" />
@@ -321,7 +312,6 @@
             Grid.Row="8"
             Grid.Column="0"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="1" />
@@ -329,7 +319,6 @@
             Grid.Row="8"
             Grid.Column="1"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="2" />
@@ -337,7 +326,6 @@
             Grid.Row="8"
             Grid.Column="2"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="3" />
@@ -345,7 +333,6 @@
             Grid.Row="8"
             Grid.Column="3"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource OperatorButtonStyle}"
             Command="{Binding MathOperatorCommand}"
             Text="+" />
@@ -353,7 +340,6 @@
             Grid.Row="8"
             Grid.Column="4"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource OperatorButtonStyle}"
             Command="{Binding MathOperatorCommand}"
             Text="-" />
@@ -364,7 +350,6 @@
             Grid.Row="9"
             Grid.Column="0"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="0" />
@@ -372,7 +357,6 @@
             Grid.Row="9"
             Grid.Column="1"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
             Text="." />
@@ -380,7 +364,6 @@
             Grid.Row="9"
             Grid.Column="2"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding BackspaceCommand}"
             Text="⌫" />
@@ -389,7 +372,6 @@
             Grid.Column="3"
             Grid.ColumnSpan="2"
             ZIndex="1"
-            Margin="2,3,2,1"
             Style="{StaticResource OperatorButtonStyle}"
             Command="{Binding CalculateCommand}"
             Text="=" />

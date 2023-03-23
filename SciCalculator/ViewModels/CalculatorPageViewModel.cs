@@ -1,10 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ViewModels
+﻿namespace SciCalculator.ViewModels
 {
     [INotifyPropertyChanged]
     internal partial class CalculatorPageViewModel
@@ -14,8 +8,9 @@ namespace ViewModels
 
         [ObservableProperty]
         private string calculatedResult = "0";
-        
+
         private bool isSciOpWaiting = false;
+
 
         [RelayCommand]
         private void Reset()
@@ -32,21 +27,28 @@ namespace ViewModels
             {
                 return;
             }
+
             if (isSciOpWaiting)
             {
                 InputText += ")";
+                isSciOpWaiting = false;
             }
 
             try
             {
                 var inputString = NormalizeInputString();
+                var expression = new Expression(inputString);
+                var result = expression.Evaluate();
+
+                CalculatedResult = result.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                CalculatedResult = "NAN";
+                CalculatedResult = "NaN";
             }
         }
-        private string NormalizeInputString ()
+
+        private string NormalizeInputString()
         {
             Dictionary<string, string> _opMapper = new()
             {
@@ -71,23 +73,26 @@ namespace ViewModels
             foreach (var key in _opMapper.Keys)
             {
                 retString = retString.Replace(key, _opMapper[key]);
-            };
+            }
+
             return retString;
         }
 
-        private void BackSpace()
+        [RelayCommand]
+        private void Backspace()
         {
             if (InputText.Length > 0)
             {
                 InputText = InputText.Substring(0, InputText.Length - 1);
             }
         }
+
         [RelayCommand]
         private void NumberInput(string key)
         {
             InputText += key;
         }
-        
+
         [RelayCommand]
         private void MathOperator(string op)
         {
@@ -96,22 +101,25 @@ namespace ViewModels
                 InputText += ")";
                 isSciOpWaiting = false;
             }
-            InputText += $"{op}";
+
+            InputText += $" {op} ";
         }
+
         [RelayCommand]
         private void RegionOperator(string op)
         {
             if (op == ")")
             {
-                isSciOpWaiting = true;
+                isSciOpWaiting = false;
             }
+            InputText += op;
         }
+
         [RelayCommand]
-        private void ScientificOperator (string op)
+        private void ScientificOperator(string op)
         {
             InputText += $"{op}(";
             isSciOpWaiting = true;
         }
-    
     }
 }

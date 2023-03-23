@@ -39,7 +39,7 @@
                 VerticalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="{Binding InputText}" Style="{StaticResource InputBoxLabelStyle}"/>
+                        <Span Text="{Binding inputText}" Style="{StaticResource InputBoxLabelStyle}"/>
                         <Span Text="|" FontSize="28" TextColor="{StaticResource PrimaryColor}" Style="{StaticResource InputBoxLabelStyle}"/>
                         <Span Text=" " Style="{StaticResource InputBoxLabelStyle}"/>
                     </FormattedString>
@@ -59,7 +59,7 @@
                 Style="{StaticResource EqualsLabelStyle}"
                 Margin="16,0"/>
             <Label 
-                Text="{Binding CalculatedResult, Mode=OneWay}"
+                Text="{Binding calculatedResult, Mode=OneWay}"
                 VerticalOptions="Center"
                 VerticalTextAlignment="Center"
                 HorizontalOptions="End"
@@ -76,7 +76,6 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
-            Command="{Binding ScientificOperatorCommand}"
             Text="MEAN" />
         <Button 
             Grid.Row="2"
@@ -84,7 +83,6 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
-            Command="{Binding ScientificOperatorCommand}"
             Text="MOD" />
         <Button 
             Grid.Row="2"
@@ -92,7 +90,6 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
-            Command="{Binding ScientificOperatorCommand}"
             Text="STD" />
         <Button 
             Grid.Row="2"
@@ -100,7 +97,6 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
-            Command="{Binding ScientificOperatorCommand}"
             Text="VAR" />
         <Button 
             Grid.Row="2"
@@ -108,7 +104,6 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
-            Command="{Binding ScientificOperatorCommand}"
             Text="FACT" />
 
         <!--Row 2-->
@@ -120,6 +115,7 @@
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
             Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="SIN"
             Text="SIN" />
         <Button 
             Grid.Row="3"
@@ -241,16 +237,17 @@
         <Button 
             Grid.Row="6"
             Grid.Column="0"
-            ZIndex="1"
             Style="{StaticResource NumberButtonStyle}"
+            Text="7"
             Command="{Binding NumberInputCommand}"
-            Text="7" />
+            CommandParameter="7" />
         <Button 
             Grid.Row="6"
             Grid.Column="1"
             ZIndex="1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
+            CommandParameter="8"
             Text="8" />
         <Button 
             Grid.Row="6"
@@ -258,6 +255,7 @@
             ZIndex="1"
             Style="{StaticResource NumberButtonStyle}"
             Command="{Binding NumberInputCommand}"
+            CommandParameter="9"
             Text="9" />
         <Button 
             Grid.Row="6"
